@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Open English Login Plataforma</title>
+    <meta name="description" content="Acceso a Estudiantes: Puedes ingresar aquí a Open English - Acesso para alunos: Você pode fazer login na Open English aqui">
+
+    <link media="all" rel="stylesheet" type="text/css" href="https://lp2-static.openenglish.com/css/ResponsiveMain.30.1.2084.css" />
+    <link media="all" rel="stylesheet" type="text/css" href="https://lp2-static.openenglish.com/css/ResponsiveLogin.30.1.2084.css" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/ico">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no">
+
+</head>
+<body class="login-page login-bg" style="background-image: url('../images/login-5.jpg')">
+    <div id="login-holder">
+        <div class="loader"></div>
+    </div>
+
+    <script src="https://lp2-static.openenglish.com/js/Common.30.1.2084.js"></script>
+    <script src="https://lp2-static.openenglish.com/js/CommonConfig.30.1.2084.js"></script>
+    <script>
+        var loginFailures = !isNaN(parseInt("0")) ? parseInt("0") : 0;
+        oeApp.addData({
+            common: { "androidApplicationURL": "https://play.google.com/store/apps/details?id\u003dcom.openenglish.learningplatform", "iosApplicationURL": "https://itunes.apple.com/us/app/open-english-2-0/id1434101832?ls\u003d1\u0026mt\u003d8", "mobileBlockActivation": true, "blackboardDemoclassURL": "https://sas.elluminate.com/site/external/jwsdetect/meeting.jnlp?sid\u003d2009260\u0026password\u003dM.EC78D4A19AD3BDB77B2D48D4DBD359\u0026username\u003dElaine+%2880767G%29", "detectZoom": false, "env": "PRD", "serverTime": 1724504401995, "uiTimezone": "America/New_York", "fbApi": "115521021946978", "googleApiKey": "AIzaSyDf_FtKS-9VToHLU3pLdX6KTZC6IDjIKRg", "googleClientId": "225060065189.apps.googleusercontent.com", "googleAnalyticsTrackingId": "UA-2777546-20", "loginUrl": "/login.html", "notificationsPollTimeMS": 300000, "enableProfileRedirectLoginTempPassword": false, "googleTagManagerId": "GTM-M2QCXR", "enableLogin2": false, "liveAgentButtonIdleTime": 5, "zuora": false, "showLoginBrick": true, "liveClassOnDemandClasses": true, "liveClassStudentJoinActiveTime": 120000, "contentServicesUrl": "//learningplatform.openenglish.com/contentServices", "liveClassTourVideo": "https://lessons.openenglish.com/media/video/demo/web_demo_10_live_classes_tutorial_{{lang}}_{{bitrate}}.mp4", "siteTourVideo": "https://lessons.openenglish.com/media/video/demo/demo_{{lang}}.mp4", "englishCentralSDKUrl": "//www.englishcentral.com/dist/sdk/sdk.js", "englishCentralReportCardUrl": "//reportcard.englishcentral.com", "speechaceHostname": "https://openenglish.speechace.com", "audioUrlLocation": "https://d1ie4wu5efc6pm.cloudfront.net/placementtest/", "ppBillingHistoryUrl": "https://pp-billing-history.openenglish.com", "isStudyBundleNewProgressEnabled": true, "isActivationPlacementTestEnabled": false, "oeThirdpartyServiceHost": "https://oe-thirdparty-service-ext.openenglish.com", "wolverineHost": "https://wolverine-ext.openenglish.com/lp2-wolverine-webapp", "accountApiGatewayHost": "https://oe-account-api-gateway-ext.openenglish.com", "gamificationApiHost": "https://oe-gamification-service-ext.openenglish.com", "gamificationGameRulesUrl": "https://oe-gamification-rules.openenglish.com", "courseServiceHost": "https://oe-course-service-ext.openenglish.com", "industryContentPlayerHost": "https://web-lesson-player.openenglish.com", "webUnitIndexHost": "https://web-unit-index.openenglish.com", "webPrivateClassesHost": "https://web-private-classes.openenglish.com", "webPlatformTourHost": "https://oe-apps.openenglish.com/web-platform-tour/index.html", "webProgressPageHost": "https://oe-apps.openenglish.com/web-progress-page/index.html", "webShareCertificatePageHost": "https://oe-apps.openenglish.com/web-certificate-share/index.html", "webMyCoachPageHost": "https://oe-apps.openenglish.com/web-my-coach-page/index.html", "webReferralPageHost": "https://lessons.openenglish.com/production/private-classes/assets", "webLcOnboardingPageHost": "https://oe-apps.openenglish.com/web-live-class-onboarding/index.html", "webLessonPlayerPageHost": "https://oe-apps.openenglish.com/web-lesson-player/index.html", "webChatBotPageHost": "https://oe-apps.openenglish.com/web-chat-bot/index.html", "prismicUrl": "https://learningplatform.prismic.io/api/v2", "oeProgressServiceHost": "https://oe-progress-service-ext.openenglish.com", "oeProfileServiceHost": "https://oe-profile-service-ext.openenglish.com", "oeLiveClassServiceHost": "https://oe-liveclass-service-ext.openenglish.com" },
+            loginFailures: loginFailures,
+            locale: 'es'
+        });
+        commonConfig.setup();
+    </script>
+    <script src="https://lp2-static.openenglish.com/js/login/AngularLogin.30.1.2084.js"></script>
+    <script>
+        var login = new Login({ el: '#login-holder' });
+        login.render();
+    </script>
+</body>
+</html>
+
+
